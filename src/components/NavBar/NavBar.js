@@ -1,14 +1,16 @@
 import React from 'react'
 import './navbar.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export const NavBar = () => {
     return (
         <div className='containerNav'>
             <div className='containerNav'>
-                LOGO
+            logo
             </div>
-            <p>Home</p>
-            <p>Categorias</p>
-            <p>Carrito</p>
+            <p href="/home">Home</p>
+            <p href="/home">Categorias</p>
+            <p href="/home">Carrito</p>
         </div>
     )
 }

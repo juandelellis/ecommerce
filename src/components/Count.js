@@ -8,7 +8,7 @@ const Count = ({min, max, onAdd, count}) => {
            <p>{count} Productos</p>
            <button onClick={max}> +  </button>
            </div>
-           <button disabled={count < 2} onClick={onAdd}>
+           <button disabled={count === 0} onClick={onAdd}>
                {" "}
                Agregar {count} {" "}
                </button>

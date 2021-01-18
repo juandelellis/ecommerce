@@ -12,7 +12,8 @@ const CountContainer = ({initial, stock}) => {
     };
 
     const sub = () =>  {
-        setCount(count - 1);
+        if (count > 0) setCount(count - 1)
+        else alert ("Tenés que agregar al menos un item");
     };
 
     const onAdd = () => {

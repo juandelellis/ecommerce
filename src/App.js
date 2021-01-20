@@ -2,7 +2,7 @@
 import './App.css';
 import { NavBar } from './components/NavBar/NavBar'
 import { ItemListContainer} from './components/ItemListContainer/ItemListContainer'
-import CountContainer from './components/ItemListContainer/CountContainer'
+import CountContainer from './components/CountContainer/CountContainer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

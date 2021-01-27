@@ -1,14 +1,14 @@
 import React from 'react'
-import "./ItemList.css"
+import "./ItemDetail.css"
 import Item from "../Item/Item";
-export const ItemList = ({items} ) => {
+export const ItemDetail = ({items} ) => {
     return (
         <React.Fragment>
-             <div>Algunos productos</div>
+             <div>Conocé este producto</div>
              <ul>
-             {items  && items.map(item => <Item key={item.id} item={item} />)} 
+             {items && items.map (item => <Item key={item.id} item={item.title}  />)} 
              </ul>
         </React.Fragment>
     )
 }
-export default ItemList; 
+export default ItemDetail;  

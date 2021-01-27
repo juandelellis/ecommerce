@@ -2,6 +2,7 @@
 import './App.css';
 import { NavBar } from './components/NavBar/NavBar'
 import { ItemListContainer} from './components/ItemListContainer/ItemListContainer'
+import { ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailContainer'
 import CountContainer from './components/CountContainer/CountContainer'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,9 +17,12 @@ function App() {
       <Route path="/contact">
       <Contact />
       </Route>
-      <Route path="/">
+      <Route path="/category/:id">
       <ItemListContainer />
       <CountContainer initial={1} stock={5} />
+      <Route path="/item/:id">
+      <ItemDetailContainer />
+      </Route>
       </Route>
       </Switch>
     </div>

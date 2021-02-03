@@ -7,6 +7,7 @@ import CountContainer from './components/CountContainer/CountContainer'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './components/Contact/Contact';
+import Context, { CartContext } from './context/CartContext'
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       <CountContainer initial={1} stock={5} />
       <Route path="/item/:id">
       <ItemDetailContainer />
+      </Route>
+      <Route path="/item/:id">
+      <CartContext />
       </Route>
       </Route>
       </Switch>
